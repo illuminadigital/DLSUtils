@@ -1,10 +1,9 @@
 {
     "name": "illuminadigital/DLSUtils",
-
     "minimum-stability": "dev",
     "autoload": {
         "psr-0": {
-            "DLSUtils": "src"
+            "": "src"
         }
     }
 }
