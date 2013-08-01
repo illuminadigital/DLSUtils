@@ -1,5 +1,5 @@
 {
-    "name": "illuminadigital/symfony-bundles",
+    "name": "illuminadigital/DLSUtils",
     "require": {
         "symfony/symfony": "2.*"
     },
