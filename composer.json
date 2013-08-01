@@ -1,8 +1,9 @@
 {
     "name": "illuminadigital/DLSUtils",
     "require": {
-        "symfony/symfony": "2.3.*"
+        "symfony/symfony": "~2.0"
     },
+    "minimum-stability": "dev",
     "autoload": {
         "psr-0": {
             "DLSUtils": "src"
