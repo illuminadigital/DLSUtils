@@ -3,7 +3,7 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-0": {
-            "": "src"
+            "DLSUtils": "src"
         }
     }
 }
