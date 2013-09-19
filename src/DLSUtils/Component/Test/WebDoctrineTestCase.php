@@ -5,7 +5,7 @@ namespace DLSUtils\Component\Test;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 use Symfony\Component\DomCrawler\Crawler;
 
-class WebDoctrineTestTest extends WebTestCase
+class WebDoctrineTestCase extends WebTestCase
 {
 
     protected static $entityManager;
