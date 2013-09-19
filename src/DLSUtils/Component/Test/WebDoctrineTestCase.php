@@ -1,6 +1,6 @@
 <?php
 
-namespace DLSUtils\Test;
+namespace DLSUtils\Component\Test;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 use Symfony\Component\DomCrawler\Crawler;
