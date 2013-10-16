@@ -114,4 +114,10 @@ class WebDoctrineTestCase extends WebTestCase
         $options = array_merge($options, array('command' => $command));
         return static::$application->run(new \Symfony\Component\Console\Input\ArrayInput($options));
     }
+
+    public function tearDown()
+    {
+        $container = static::$kernel->getContainer()->get('doctrine')->getConnection()->close();
+        parent::tearDown();
+    }
 }
