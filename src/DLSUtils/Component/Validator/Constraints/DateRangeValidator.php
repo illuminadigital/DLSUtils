@@ -28,17 +28,17 @@ class DateRangeValidator extends ConstraintValidator
             return;
         }
 
-        if (null !== $constraint->max && $value > $constraint->max) {
+        if (null !== $constraint->max && $value > new \DateTime($constraint->max)) {
             $this->context->addViolation($constraint->maxMessage, array(
                 '{{ value }}' => $value,
-                '{{ limit }}' => $this->formatDate($constraint->max),
+                '{{ limit }}' => $this->formatDate(new \DateTime($constraint->max)),
             ));
         }
 
-        if (null !== $constraint->min && $value < $constraint->min) {
+        if (null !== $constraint->min && $value < new \DateTime($constraint->min)) {
             $this->context->addViolation($constraint->minMessage, array(
                 '{{ value }}' => $value,
-                '{{ limit }}' => $this->formatDate($constraint->min),
+                '{{ limit }}' => $this->formatDate(new \DateTime($constraint->min)),
             ));
         }
     }
